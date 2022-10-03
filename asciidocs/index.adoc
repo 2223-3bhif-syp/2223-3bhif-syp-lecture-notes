@@ -1,4 +1,61 @@
-= Index page
+= 22/23 3bhif syp - Lecture Notes
 ifndef::imagesdir[:imagesdir: images]
 
-image::img.png[]
+== 2022-09-19
+
+* Organisatorisches
+
+=== Plantuml
+
+* https://plantuml.com/en/class-diagram
+
+[plantuml,cld,png]
+----
+include::plantuml/cld.puml[]
+----
+
+== 2022-10-03
+
+=== Git-Grundlagen
+
+* centralized vcs
+* distributed vcs
+
+=== Projekte (Buch)
+
+==== Projektmerkmale
+
+* Routineaufgaben vs. Projekte
+
+
+image::querschnittsaufgaben.png[]
+
+* Reporting (Berichtswesen)
+** Standard-Reports (wöchentlich, monatlich, ....)
+** adhoc-Reports (aufgrund eines Ereignisses)
+
+
+* Stakeholder -> Betroffenen
+** nicht die Projektdurchführenden (Programmierer und User) und Eigentümer, sondern Personen, die die Auswirkungen des Projekts verspüren
+** Stakeholder-Analyse identifiziert die Betroffenen, versucht die Auswirkungen für diese Betroffenen zu erfassen und ggf. deren Maßnahmen
+
+* Meilenstein beinhaltet
+** Termin (Zeitpunkt)
+** und eine inhaltliche Komponente (Was wurde gemacht)
+
+
+==== Projektauftrag
+
+* Erstellen Sie einen Projektauftrag (Link im Moodle)
+** in Asciidoctor
+** Gliederung lt. Buch
+
+
+
+
+
+
+
+
+
+

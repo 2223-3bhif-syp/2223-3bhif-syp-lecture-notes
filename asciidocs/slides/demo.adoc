@@ -4,3 +4,12 @@ ifndef::imagesdir[:imagesdir: ../images]
 image::img.png[]
 
 Testing filter by changing documentation file
+
+== XXX
+
+* fsdhfjshdfj
+
+=== YYY
+
+* jghhgjj
+

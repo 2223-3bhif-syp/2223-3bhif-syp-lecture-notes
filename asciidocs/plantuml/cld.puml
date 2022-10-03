@@ -1,0 +1,14 @@
+@startuml
+
+class Person {
+ firstName: String
+ lastName: String
+}
+
+class Hobby {
+  bezeichnung:String
+}
+
+Person "1" <-- "*" Hobby: übt aus >
+
+@enduml
