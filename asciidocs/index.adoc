@@ -44,16 +44,65 @@ image::querschnittsaufgaben.png[]
 ** und eine inhaltliche Komponente (Was wurde gemacht)
 
 
-==== Projektauftrag
+==== Projektantrag
 
-* Erstellen Sie einen Projektauftrag (Link im Moodle)
+* Erstellen Sie einen Projektantrag (Link im Moodle)
 ** in Asciidoctor
 ** Gliederung lt. Buch
 
 
+== 2022-10-10
+
+=== Kreativitätstechniken
+
+==== Mindmap
+
+* Freeplane
+* plantuml - mindmap
+
+* doc-as-code
+
+[plantuml]
+----
+@startmindmap
+* Debian
+** Ubuntu
+*** Linux Mint
+*** Kubuntu
+**** KDE
+*** Lubuntu
+**** LXDE
+*** KDE Neon
+** LMDE
+** SolydXK
+** SteamOS
+** Raspbian with a very long name
+*** <s>Raspmbc</s> => OSMC
+*** <s>Raspyfi</s> => Volumio
+@endmindmap
+----
+
+=== Projektidee - Projektantrag
+
+=== Variantenbildung
+
+* SWOT - Analyse
+
+=== Zielbestimmung
+
+* Ausgangssituation
+* Problemstellung
+* Aufgabenstellung
+* Ergebnis -> Leistung
+* Ziel -> Leistungswirkung
 
 
+==== Magisches Viereck
 
+image::effektivität-vs-effizienz.png[]
+
+* Effektivität -> Grad der Zielerreichung
+* Effizienz -> Input-Output-Relation
 
 
 
