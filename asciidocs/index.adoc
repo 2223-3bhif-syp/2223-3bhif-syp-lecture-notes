@@ -96,6 +96,10 @@ image::querschnittsaufgaben.png[]
 * Ergebnis -> Leistung
 * Ziel -> Leistungswirkung
 
+//--
+
+* Operationalisieren s. Buch S. 53
+
 
 ==== Magisches Viereck
 
@@ -106,5 +110,65 @@ image::effektivität-vs-effizienz.png[]
 
 
 
+== 2022-10-17
 
+.Projektanträge - Übersicht
+[%collapsible]
+====
+[plantuml,png]
+----
+include::plantuml/projekte.puml[]
+----
+====
+
+.Projektgruppen
+[%collapsible]
+====
+[plantuml,png]
+----
+include::plantuml/projektgruppen.puml[]
+----
+====
+
+
+* https://github.com/htl-leonding-college/asciidoctor-convert-template
+
+
+== 2022-11-07
+
+=== Projektaufträge
+
+=== Klassendiagramm
+
+* bis Folie 3-1-19 Geltungsbereich (Scope) Attribute und Methoden
+
+=== Modell
+
+* Vereinfachte Darstellung der Realität unter Berücksichtigung eines besonderen Aspektes
+
+* zB
+** Datenmodell -> die Datenstrukturen werden besonders herausgearbeitet
+** Ablaufdiagramm -> die zeit-logischen-Zusammenhänge werden besonders beachtet
+
+[plantuml,democld,png]
+----
+@startuml
+class Person {
+ -firstName: String
+ -lastName: String
+}
+@enduml
+----
+
+
+
+== 2022-11-xx
+
+image::projekt-leitfaden.png[]
+
+* kein technischer Overkill - besser mit Bleistift gezeichnetes Wireframe als Clickable Mockup
+
+=== Wireframe vs Mockup vs Prototyp
+
+siehe https://www.deckweiss.at/post/wireframes-mockups-und-prototypen-was-wann-und-warum[Wireframes, Mockups und Prototypen: Was, wann und warum?^]
 
