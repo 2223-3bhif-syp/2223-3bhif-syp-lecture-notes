@@ -1,5 +1,16 @@
 = 22/23 3bhif syp - Lecture Notes
 ifndef::imagesdir[:imagesdir: images]
+:icons: font
+:experimental:
+:sectnums:
+:toc:
+ifdef::backend-html5[]
+
+// https://fontawesome.com/v4.7.0/icons/
+icon:file-text-o[link=https://raw.githubusercontent.com/2223-3bhif-syp/2223-3bhif-syp-lecture-notes/main/asciidocs/{docname}.adoc] ‏ ‏ ‎
+icon:github-square[link=https://github.com/2223-3bhif-syp/2223-3bhif-syp-lecture-notes] ‏ ‏ ‎
+icon:home[link=http://edufs.edu.htl-leonding.ac.at/~t.stuetz/hugo/2021/01/lecture-notes/]
+endif::backend-html5[]
 
 == 2022-09-19
 
@@ -159,6 +170,12 @@ class Person {
 }
 @enduml
 ----
+
+=== Google Java Style Guide
+
+https://google.github.io/styleguide/javaguide.html[Google Java Style Guide^]
+
+image::https://res.cloudinary.com/practicaldev/image/fetch/s--qjkpuQX6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://imgs.xkcd.com/comics/code_quality.png[]
 
 
 
