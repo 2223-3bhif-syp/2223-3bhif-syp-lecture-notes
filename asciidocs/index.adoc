@@ -179,6 +179,128 @@ image::https://imgs.xkcd.com/comics/code_quality.png[]
 
 
 
+== 2022-11-14
+
+=== Klassendiagramme (Fortsetzung)
+
+* Signatur
+
+
+[plantuml,democld2,png]
+----
+@startuml
+abstract class Mammal {
+}
+
+class Person {
+ -firstName: String
+ +lastName: String
+ -{static} counter: int
+}
+
+class Hobby
+
+Person -right- Hobby : > übt aus
+
+Mammal <|-- Person
+@enduml
+----
+
+==== Multiplizität
+
+* 2 Interpretationen
+** Anzahl der Instanzen einer Klasse
+*** keine Instanzen zB Math-Klasse
+*** eine Instanz -> Singleton
+*** mehrere Instanzen
+** Anzahl der Objekte bei einer Beziehung zB Assoziation
+
+=== DOM - Domain Object Model
+
+* nicht zu verwechseln mit Document Object Model (Baum-Repräsentation der HTML-Seite im Browser)
+* Domain entspricht Fachbereich
+** zB Medizin, Einzelhandel, Kfz-Handel, Warenwirtschaft,...
+* DOM ist vergleichbar mit einem ERD
+** ein Klassendiagramm ohne technische Klasse nut mit Fachbereichsklassen
+
+
+=== Beziehungen
+
+** Assoziation - benutzt-Beziehung
+** Aggregation - "besteht aus" -> zerstörungsfreie Zerlegung
+*** zB Auto besteht aus Autoreifen
+** Komposition - "besteht aus" -> zerstörende Zerlegung
+*** zB Haus besteht aus Etagen
+** Vererbung
+** Realisierung (Implementierung)
+
+//--
+
+* Beziehungen
+** unidirektional
+** bidirektional
+
+//--
+
+* Multiplizität
+** 1:*
+** 1:1
+** \*:*
+
+
+==== Vererbung
+
+image::complete-vs-incomplete.png[]
+
+image::disjoint-vs-overlapping.png[]
+
+
+.Assoziative Beziehung (wird bei \*:*-Beziehungen verwendet)
+[plantuml,democld3,png]
+----
+@startuml
+left to right direction
+Firma -- Person
+(Firma, Person) .. Aktie
+@enduml
+----
+
+.Alternative bei der Darstellung einer assoziativen Beziehung
+[plantuml,democld4,png]
+----
+@startuml
+left to right direction
+Firma "1" <-- "0..*" Aktie
+Aktie --> Person
+@enduml
+----
+
+=== Anwendungsfalldiagramm (Use-Case-Diagramm)
+
+* Dient beim Erstellen der Anforderungen als Schnittstelle zwischen Kunde und Programmierer
+
+* Es werden Anwendungsfälle dargestellt
+** Bsp PKW
+*** Transport von Personen
+*** Transport von Gütern
+*** ev. Statussymbol
+
+[plantuml,demo4,png]
+----
+@startuml
+left to right direction
+actor "Besitzer" as fc
+rectangle PKW {
+  usecase "transportiere Personen" as UC1
+  usecase "transportiere Güter" as UC2
+  usecase "cruise auf Landstraße" as UC3
+}
+fc -- UC1
+fc -- UC2
+fc -- UC3
+@enduml
+----
+
 == 2022-11-xx
 
 image::projekt-leitfaden.png[]
