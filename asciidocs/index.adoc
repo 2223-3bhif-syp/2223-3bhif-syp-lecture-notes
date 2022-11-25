@@ -301,13 +301,38 @@ fc -- UC3
 @enduml
 ----
 
+* ev. Ergänzung mit
+** Tabelle und
+** Aktivitätsdiagramm
+
 == 2022-11-xx
 
 image::projekt-leitfaden.png[]
 
 * kein technischer Overkill - besser mit Bleistift gezeichnetes Wireframe als Clickable Mockup
 
+
+== 2022-11-21 Erstellen von gh-pages mit Asciidoctor
+
+* altes Repo mit asciidoctor - Beispielen
+** https://github.com/htl-leonding-college/asciidoctor-docker-template
+** html-pages werden lokal erstellt
+* neues Repo
+** https://github.com/htl-leonding-college/asciidoctor-convert-template
+** html wird in einem gh-runner generiert
+
 === Wireframe vs Mockup vs Prototyp
 
 siehe https://www.deckweiss.at/post/wireframes-mockups-und-prototypen-was-wann-und-warum[Wireframes, Mockups und Prototypen: Was, wann und warum?^]
 
+=== Anforderungen an Projekt-Repositories
+
+* Im repo-root gibt es ein README.adoc, in dem
+** ganz kurz erklärt wird, was die Aufgabenstellung (und ev. das Problem) des Projekts ist
+** sämtliche (adoc)-Dokumente aufgelistet sind
+** das .idea-Verzeichnis wird nicht committed
+** REGEL: Sämtliche Artefakte, die generiert werden, dürfen nicht im Repo gespeichert werden
+
+=== Anforderungsanalyse
+
+==== Interview
