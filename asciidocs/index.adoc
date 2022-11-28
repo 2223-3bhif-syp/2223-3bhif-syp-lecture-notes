@@ -305,11 +305,6 @@ fc -- UC3
 ** Tabelle und
 ** Aktivitätsdiagramm
 
-== 2022-11-xx
-
-image::projekt-leitfaden.png[]
-
-* kein technischer Overkill - besser mit Bleistift gezeichnetes Wireframe als Clickable Mockup
 
 
 == 2022-11-21 Erstellen von gh-pages mit Asciidoctor
@@ -336,3 +331,22 @@ siehe https://www.deckweiss.at/post/wireframes-mockups-und-prototypen-was-wann-u
 === Anforderungsanalyse
 
 ==== Interview
+
+
+
+== 2022-11-28
+
+image::projekt-leitfaden.png[]
+
+* kein technischer Overkill - besser mit Bleistift gezeichnetes Wireframe als Clickable Mockup
+
+=== Pflichtenheft
+
+=== Git - Branches
+
+.source: https://www.atlassian.com/de/git/tutorials/comparing-workflows/gitflow-workflow[Git-flow-Workflow^]
+image::feature-branches.svg[]
+
+* main-branch nur für releases
+* develop-branch immer lauffähig
+* feature- und bugfix-branches für entwickeln
