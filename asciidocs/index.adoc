@@ -350,3 +350,25 @@ image::feature-branches.svg[]
 * main-branch nur für releases
 * develop-branch immer lauffähig
 * feature- und bugfix-branches für entwickeln
+
+== 2022-12-05
+
+== Git - Architektur und Überblick
+
+image::git-overview2.png[]
+
+=== V-Modell
+
+image::v-modell.png[]
+
+==== Vorgehensmodelle in der Software Entwicklung
+
+* Grobe Unterteilung
+** Klassische Vorgehensweise
+*** Wasserfallmodell
+*** Spiralmodell nach Boehm
+*** V-Modell
+*** ...
+** Agile Vorgehensmodelle
+*** Scrum
+*** Kanban
