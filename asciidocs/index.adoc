@@ -372,3 +372,102 @@ image::v-modell.png[]
 ** Agile Vorgehensmodelle
 *** Scrum
 *** Kanban
+
+== 2022-12-19
+
+=== Test 01
+
+=== Scrum
+
+== 2023-01-09
+
+=== Rückgabe Test und Besprechung
+
+=== Nächste Schritte im Projekt
+
+== 2023-01-16
+
+=== Regeln für die Projektarbeit
+
+==== Jeder Commit ist einer User Story / Task zugeordnet
+
+==== Arbeitszuordnung
+
+* Jedes Projektmitglied hat einen eigenständigen Aufgabenbereich zB einen Task.
+* Dieser Task wir in einem eigenem Branch erstellt / durchgeführt
+
+==== Sprint Reviews / Präsentationen
+
+* Es darf nicht auf dem eigenen Rechner (kein grüner Pfeil in der IDE) präsentiert werden. Ein essentielles Deployment ist erforderlich.
+
+* Folgende Möglichkeiten
+** oravm
+** leocloud in eigenem Namespace
+** minikube
+
+IMPORTANT: In einem laufenden Sprint wird nichts verändert. Weder Aufgaben des Sprint Backlog noch die gewählte Vorgangsweise (zB Branching)
+
+==== git-branching
+
+image::git-branching.png[]
+
+
+=== Projekthandbuch für Scrum
+
+* Team mit Rollen
+* Wie werden die Branches durchgeführt (siehe #git-branching)
+* Die URL für
+** github-Repo
+** Doku
+** Scrum-Board
+
+
+* https://www.youtube.com/watch?v=jXBo-RasY3g
+
+
+=== Dokumentation
+
+* Es muss eine (grobe) Systemarchitektur geben
+* Gewisse Entwurfsentscheidungen müssen dokumentiert werden
+* Eine RevealJS-Präsentation muss immer verfügbar sein
+** Problemstellung
+** Aufgabenstellung
+** derzeitiger Stand
+
+=== Testen
+
+* Die Akzeptanzkriterien sind als Unit-Tests implementieren (wenn möglich)
+* und ist zu präsentieren
+
+=== Film
+
+* im 5. Jg.
+
+=== Plakat
+
+
+=== Nächste Schritte im Projekt
+
+https://github.com/1920-3ahitm-itp/02-project-repositories-studentfeedback
+
+* Entsprechend der Vorlage wird mit mybatis ein grundlegendes Projekt erstellt.
+** Erstellung eines plantuml-Datenmodells mit anschließender Erstellung eine sql-Files
+** Beim Starten des Projekts werden die Tabellen erstellt und Daten importiert (INSERTs)
+
+
+
+
+== 2023-01-23
+
+* TODO: Wie erstelle ich eine RevealJS-Präsentation
+
+
+
+
+
+
+
+
+
+
+
