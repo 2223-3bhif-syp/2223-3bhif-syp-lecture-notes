@@ -456,11 +456,32 @@ https://github.com/1920-3ahitm-itp/02-project-repositories-studentfeedback
 
 
 
-
 == 2023-01-23
+
+
+=== Pflichtenheft
+
+* Ausgangssituation
+* Istzustand (IST)
+** DOM-Ist
+* Problemstellung
+* Aufgabenstellung (SOLL)
+** Funktionale Anforderungen
+*** DOM-Soll
+*** UCD
+*** ACD
+*** Wireframes
+** Nichtfunktionale Anforderungen
+
+image::nfa.png[]
+
+* Ziele
+* Mengengerüst
+* ...
 
 * TODO: Wie erstelle ich eine RevealJS-Präsentation
 
+image::dart-feedback-2023-01-23.png[]
 
 
 
