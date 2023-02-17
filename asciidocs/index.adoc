@@ -476,7 +476,7 @@ https://github.com/1920-3ahitm-itp/02-project-repositories-studentfeedback
 image::nfa.png[]
 
 * Ziele
-* Mengengerüst
+    * Mengengerüst
 * ...
 
 * TODO: Wie erstelle ich eine RevealJS-Präsentation
@@ -484,6 +484,23 @@ image::nfa.png[]
 image::dart-feedback-2023-01-23.png[]
 
 
+
+
+== 2023-02-13
+
+* Bis nach den Semesterferien
+** Cld fertigstellen
+** in Java programmieren
+*** Entities
+*** Repositories
+** Use-Cases mit assertj-db testen
+** Konfigurieren einer gh-page im Repo laut Angabe
+
+IMPORTANT: Für die einzelnen Aktivitäten im youtrack User Stories und tasks anlegen und bei den Commits deren Id in der Commit-Message eintragen
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XUIse_dzdGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+++++
 
 
 
