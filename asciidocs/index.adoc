@@ -507,7 +507,7 @@ IMPORTANT: Für die einzelnen Aktivitäten im youtrack User Stories und tasks an
 
 === Docker
 
-* Docker ist leichtgewichtige Virtualiserung.
+* Docker ist leichtgewichtige Virtualisierung.
 
 ==== Warum Docker?
 
@@ -530,10 +530,84 @@ image::works-on-my-machine.png[]
 ++++
 
 
+== 2023-03-10
+
+
+image::scrum-und-v-modell.png[]
 
 
 
+== 2023-03-13
 
+* Leistungsfeststellung
+
+=== Docker
+
+image::web-server.png[]
+
+
+==== Hausübung
+
+* Erstellen eines Containers mit MariaDb
+** In einem bind mount sollen die Datenbank-Files gespeichert werden (`db`-Verzeichnis)
+** Das `docker run` - Kommando soll in einem shell-script `create-db-container.sh` gespeichert werden.
+** Nach Ausführen des Scripts soll der Container erstellt werden.
+** Erstellung eines Script `stop-db-container.sh` (der Container muss automatisch gelöscht werden)
+** Nach einem neuerlichen Start müssen die Daten wieder vorhanden sein
+** Erstellen Sie in IntelliJ eine Datenbank-Connection zu Ihrer Maria-Db
+
+
+== 2023-03-20
+
+=== Package Manager (maven, gradle, ...)
+
+* gibt die Struktur (Verzeichnisse, Files, ...) in einem Softwareprojekt vor
+** https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
+** hat den Vorteil, dass Softwareprojekte in jeder IDE geöffnet werden kann (zB intellij, vsc, eclipse, ...)
+* man trägt in einer zentralen Datei (bie maven pom.xml) die Library ein
+** diese Libraries werden automatisch beim Start des Programms heruntergeladen und
+** in einem zentralen Verzeichnis gespeichert (bei maven .m2 im User-Home)
+** Dies hat den Vorteil, dass bei Verwendung einer Library in mehreren Projekten, die Library nur einmal heruntergeladen wird.
+
+=== Testen von Softwareprodukten
+
+* jUnit
+** stellt die Funktionalität zur Verfügung, um ein Programm testen zu können
+** beim Testen werden die Ergebnisse von Methoden mit erwarteten Werten verglichen (matching)
+** falls nicht das erwartete Ergebnis geliefert wird, gibt es einen Fehler
+** als matcher kann man die Methoden von jUnit verwenden, allerdings gibt es bessere (zB hamcrest, assertj, karate ,...)
+** wir verwenden assertj-core und assertj-db
+
+image::unit-tests.png[]
+
+** Test-Matcher
+
+*** ein aktueller Wert wird mit einem vorgegebenen Wert verglichen.
+
+*** in jUnit sind solche Matcher bereits eingebaut
+
+**** assertEquals
+**** assertTrue
+**** assertXXX
+
+*** Es gibt aber auch alternative Matcher
+**** https://hamcrest.org/JavaHamcrest/tutorial[Hamcrest^]
+**** https://assertj.github.io/doc/[assertJ^]
+**** ...
+
+*** Vorteile von alternativen Matcher
+**** Übersichtlichkeit des Codes
+**** Schreibweise (fluent)
+**** Anzahl der Matcher
+***** zB speziell für Collection-Vergleiche
+***** zB für Datenbanken
+***** https://jenkov.com/tutorials/jdbc/index.html
+
+
+
+=== Activity Diagrams
+
+* https://plantuml.com/activity-diagram-beta#sdl[ACD in plantuml^ (SDL)]
 
 
 
