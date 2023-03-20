@@ -533,6 +533,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_docker">16.1. Docker</a></li>
 </ul>
 </li>
+<li><a href="#_2023_03_10">17. 2023-03-10</a></li>
+<li><a href="#_2023_03_13">18. 2023-03-13</a>
+<ul class="sectlevel2">
+<li><a href="#_docker_2">18.1. Docker</a></li>
+</ul>
+</li>
+<li><a href="#_2023_03_20">19. 2023-03-20</a>
+<ul class="sectlevel2">
+<li><a href="#_package_manager_maven_gradle">19.1. Package Manager (maven, gradle, &#8230;&#8203;)</a></li>
+<li><a href="#_testen_von_softwareprodukten">19.2. Testen von Softwareprodukten</a></li>
+<li><a href="#_activity_diagrams">19.3. Activity Diagrams</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -1625,7 +1638,7 @@ Für die einzelnen Aktivitäten im youtrack User Stories und tasks anlegen und b
 <div class="ulist">
 <ul>
 <li>
-<p>Docker ist leichtgewichtige Virtualiserung.</p>
+<p>Docker ist leichtgewichtige Virtualisierung.</p>
 </li>
 </ul>
 </div>
@@ -1677,10 +1690,232 @@ Für die einzelnen Aktivitäten im youtrack User Stories und tasks anlegen und b
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2023_03_10"><a class="anchor" href="#_2023_03_10"></a>17. 2023-03-10</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="images/scrum-und-v-modell.png" alt="scrum und v modell">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2023_03_13"><a class="anchor" href="#_2023_03_13"></a>18. 2023-03-13</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Leistungsfeststellung</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_docker_2"><a class="anchor" href="#_docker_2"></a>18.1. Docker</h3>
+<div class="imageblock">
+<div class="content">
+<img src="images/web-server.png" alt="web server">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_hausübung"><a class="anchor" href="#_hausübung"></a>18.1.1. Hausübung</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Erstellen eines Containers mit MariaDb</p>
+<div class="ulist">
+<ul>
+<li>
+<p>In einem bind mount sollen die Datenbank-Files gespeichert werden (<code>db</code>-Verzeichnis)</p>
+</li>
+<li>
+<p>Das <code>docker run</code> - Kommando soll in einem shell-script <code>create-db-container.sh</code> gespeichert werden.</p>
+</li>
+<li>
+<p>Nach Ausführen des Scripts soll der Container erstellt werden.</p>
+</li>
+<li>
+<p>Erstellung eines Script <code>stop-db-container.sh</code> (der Container muss automatisch gelöscht werden)</p>
+</li>
+<li>
+<p>Nach einem neuerlichen Start müssen die Daten wieder vorhanden sein</p>
+</li>
+<li>
+<p>Erstellen Sie in IntelliJ eine Datenbank-Connection zu Ihrer Maria-Db</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2023_03_20"><a class="anchor" href="#_2023_03_20"></a>19. 2023-03-20</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_package_manager_maven_gradle"><a class="anchor" href="#_package_manager_maven_gradle"></a>19.1. Package Manager (maven, gradle, &#8230;&#8203;)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>gibt die Struktur (Verzeichnisse, Files, &#8230;&#8203;) in einem Softwareprojekt vor</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html" class="bare">https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html</a></p>
+</li>
+<li>
+<p>hat den Vorteil, dass Softwareprojekte in jeder IDE geöffnet werden kann (zB intellij, vsc, eclipse, &#8230;&#8203;)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>man trägt in einer zentralen Datei (bie maven pom.xml) die Library ein</p>
+<div class="ulist">
+<ul>
+<li>
+<p>diese Libraries werden automatisch beim Start des Programms heruntergeladen und</p>
+</li>
+<li>
+<p>in einem zentralen Verzeichnis gespeichert (bei maven .m2 im User-Home)</p>
+</li>
+<li>
+<p>Dies hat den Vorteil, dass bei Verwendung einer Library in mehreren Projekten, die Library nur einmal heruntergeladen wird.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_testen_von_softwareprodukten"><a class="anchor" href="#_testen_von_softwareprodukten"></a>19.2. Testen von Softwareprodukten</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>jUnit</p>
+<div class="ulist">
+<ul>
+<li>
+<p>stellt die Funktionalität zur Verfügung, um ein Programm testen zu können</p>
+</li>
+<li>
+<p>beim Testen werden die Ergebnisse von Methoden mit erwarteten Werten verglichen (matching)</p>
+</li>
+<li>
+<p>falls nicht das erwartete Ergebnis geliefert wird, gibt es einen Fehler</p>
+</li>
+<li>
+<p>als matcher kann man die Methoden von jUnit verwenden, allerdings gibt es bessere (zB hamcrest, assertj, karate ,&#8230;&#8203;)</p>
+</li>
+<li>
+<p>wir verwenden assertj-core und assertj-db</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/unit-tests.png" alt="unit tests">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Test-Matcher</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ein aktueller Wert wird mit einem vorgegebenen Wert verglichen.</p>
+</li>
+<li>
+<p>in jUnit sind solche Matcher bereits eingebaut</p>
+<div class="ulist">
+<ul>
+<li>
+<p>assertEquals</p>
+</li>
+<li>
+<p>assertTrue</p>
+</li>
+<li>
+<p>assertXXX</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Es gibt aber auch alternative Matcher</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://hamcrest.org/JavaHamcrest/tutorial" target="_blank" rel="noopener">Hamcrest</a></p>
+</li>
+<li>
+<p><a href="https://assertj.github.io/doc/" target="_blank" rel="noopener">assertJ</a></p>
+</li>
+<li>
+<p>&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Vorteile von alternativen Matcher</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Übersichtlichkeit des Codes</p>
+</li>
+<li>
+<p>Schreibweise (fluent)</p>
+</li>
+<li>
+<p>Anzahl der Matcher</p>
+<div class="ulist">
+<ul>
+<li>
+<p>zB speziell für Collection-Vergleiche</p>
+</li>
+<li>
+<p>zB für Datenbanken</p>
+</li>
+<li>
+<p><a href="https://jenkov.com/tutorials/jdbc/index.html" class="bare">https://jenkov.com/tutorials/jdbc/index.html</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_activity_diagrams"><a class="anchor" href="#_activity_diagrams"></a>19.3. Activity Diagrams</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://plantuml.com/activity-diagram-beta#sdl">ACD in plantuml^ (SDL)</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-03-03 10:46:17 UTC
+Last updated 2023-03-20 12:53:45 UTC
 </div>
 </div>
 </body>
