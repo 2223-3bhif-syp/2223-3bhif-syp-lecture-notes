@@ -604,6 +604,8 @@ image::unit-tests.png[]
 ***** https://jenkov.com/tutorials/jdbc/index.html
 
 
+== 2023-03-20
+
 
 === Activity Diagrams
 
@@ -611,15 +613,81 @@ image::unit-tests.png[]
 
 
 
+== 2023-04-17
+
+=== assertj-Tipps
+
+image::assertj-using-recursive-comparison.jpg[]
+
+image::assertj-satiesfies.jpg[]
+
+=== Übung Dockerfile
+
+* führen Sie die Dockerfile-Übungen aus den https://htl-leonding-college.github.io/docker-lecture-notes/dockerfile.html#_create_a_docker_image[Technology Notes^]
+
+
+=== Übung Youtrack für das eigene Projekt
+
+* Erstellen Sie im Product-Backlog mehrere UserStories und Tasks für eine, max. 2 User Stories
+* Verschieben Sie diese 2 User Stories mit ihren Tasks in das Sprint-Backlog
+* Führen Sie nun die in den Tasks angeführten Aufgaben durch und "verbinden" sie die Commits mit den jeweiligen Tasks (Issues)
 
 
 
 
+=== Testen
+
+==== Was testet man?
+
+===== Teststrategien
+
+* bei Datenbanken
+** CRUD-Funktionalität
+*** CREATE - Erstellen eines Datensatzen einer Entity Klasse in der Entity-Table
+*** READ - Lesen eines Datensatzes und erstellen des zugehörigen Java - Objekts
+*** UPDATE - Ändern eines Java - Objekts und diese Änderungen werden in der zugehörigen DB-Tabelle gespeichert
+*** DELETE - Löschen eines Java - Objekts mit dazugehörogem Löschen in der Datenbank
++
+TIP: Man beginnt mit den Stammdaten (ohne Abhängigkeiten zu anderen Tabelle)
+
+*** Bsp:
+***** Nicht Zimmer, sondern Hotel als erste Klasse testen
+
+** Transaktionen nicht vergessen
 
 
+* User Stories (Use-Cases, Anwendungsfälle) testen
+
+** zB Reise buchen
+** zB Reise stornieren
+
+* Grenzwertanalyse - Grenzwerte werden getestet
+
+** zB Alter von 450 Jahen bei Personen - wie reagiert das System
+** Alter von -10 Jahren
+
+* Äquivalenzklassenanalyse -> Äquivalenzklassen identifizieren und aus jeder Klasse einen Wert testen und die Grenzen dieser Klasse
+
+** Bsp: Eintrittspeise: Kinder frei, Jugendliche 5 €, Erwachsene 50 €, Pensionisten 20€
+*** Sind drei Äquivalenzklassen (alle Eingabewerte innerhalb einer solchen Klasse ergebn des selben Ausgabewert)
+*** Bsp: Kind mit 3J -> gratis
+*** Kind mit 5 J -> gratis
 
 
+* Exceptions testen
 
+==== Naming der Tests
+
+The name of your test should consist of three parts:
+
+* The name of the method being tested.
+* The scenario under which it's being tested.
+* The expected behavior when the scenario is invoked
+
+//--
+* Sources:
+** https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices#naming-your-tests[microsoft^]
+** https://medium.com/@stefanovskyi/unit-test-naming-conventions-dd9208eadbea[Unit Test Naming Conventions^]
 
 
 
