@@ -558,6 +558,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_testen_2">21.4. Testen</a></li>
 </ul>
 </li>
+<li><a href="#_2023_04_17_2">22. 2023-04-17</a>
+<ul class="sectlevel2">
+<li><a href="#_docker_build">22.1. Docker build</a></li>
+</ul>
+</li>
+<li><a href="#_2023_04_24">23. 2023-04-24</a>
+<ul class="sectlevel2">
+<li><a href="#_projekt_feedback">23.1. Projekt-Feedback</a></li>
+<li><a href="#_docker_compose_einführung">23.2. docker-compose Einführung</a></li>
+</ul>
+</li>
+<li><a href="#_2023_05_15">24. 2023-05-15</a>
+<ul class="sectlevel2">
+<li><a href="#_docker_compose">24.1. docker-compose</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -2125,10 +2141,114 @@ Man beginnt mit den Stammdaten (ohne Abhängigkeiten zu anderen Tabelle)
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2023_04_17_2"><a class="anchor" href="#_2023_04_17_2"></a>22. 2023-04-17</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_docker_build"><a class="anchor" href="#_docker_build"></a>22.1. Docker build</h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2023_04_24"><a class="anchor" href="#_2023_04_24"></a>23. 2023-04-24</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_projekt_feedback"><a class="anchor" href="#_projekt_feedback"></a>23.1. Projekt-Feedback</h3>
+<div class="sect3">
+<h4 id="_testen_3"><a class="anchor" href="#_testen_3"></a>23.1.1. Testen</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Tests müssen voneinander unabhängig sein</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_docker_compose_einführung"><a class="anchor" href="#_docker_compose_einführung"></a>23.2. docker-compose Einführung</h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2023_05_15"><a class="anchor" href="#_2023_05_15"></a>24. 2023-05-15</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_docker_compose"><a class="anchor" href="#_docker_compose"></a>24.1. docker-compose</h3>
+<div class="paragraph">
+<p><a href="https://htl-leonding-college.github.io/docker-lecture-notes/docker-compose.html" class="bare">https://htl-leonding-college.github.io/docker-lecture-notes/docker-compose.html</a></p>
+</div>
+<div class="sect3">
+<h4 id="_übung_docker_compose"><a class="anchor" href="#_übung_docker_compose"></a>24.1.1. Übung docker-compose</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>erstellen Sie ein File <code>docker-compose.yaml</code> welches folgende Dienste beinhaltet</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Service backend</p>
+<div class="ulist">
+<ul>
+<li>
+<p>beinhalted eine nodejs-express-Anwendung</p>
+</li>
+<li>
+<p>greift auf eine mariadb zu</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Service db</p>
+<div class="ulist">
+<ul>
+<li>
+<p>wird vom Service backend benutzt</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Service phpmyadmin</p>
+</li>
+<li>
+<p>Netzwerk my-network mit ip 10.0.2.0/24</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>erstellen Sie ein asciidoc-File, dass direkt die source-Files (docker-compose.yaml) in das sciidoc-File included.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Es darf nicht das gesamte File auf einmal inkludiert werden, sondern nur die einzelnen Teile hintereinander</p>
+</li>
+<li>
+<p>verwenden Sie <a href="https://docs.asciidoctor.org/asciidoc/latest/macros/keyboard-macro/" target="_blank" rel="noopener">keyb-Macros</a></p>
+</li>
+<li>
+<p>Achten Sie auf eine saubere Präambel und allgemein ein sauberes Asciidoc-File</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Abgabe: siehe <a href="https://edufs.edu.htl-leonding.ac.at/moodle/mod/url/view.php?id=162255" target="_blank" rel="noopener">moodle</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-04-20 13:24:43 UTC
+Last updated 2023-05-15 08:51:47 UTC
 </div>
 </div>
 </body>
