@@ -689,8 +689,43 @@ The name of your test should consist of three parts:
 ** https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices#naming-your-tests[microsoft^]
 ** https://medium.com/@stefanovskyi/unit-test-naming-conventions-dd9208eadbea[Unit Test Naming Conventions^]
 
+== 2023-04-17
+
+=== Docker build
+
+== 2023-04-24
+
+=== Projekt-Feedback
+
+==== Testen
+
+* Tests müssen voneinander unabhängig sein
 
 
+=== docker-compose Einführung
+
+== 2023-05-15
+
+=== docker-compose
+
+https://htl-leonding-college.github.io/docker-lecture-notes/docker-compose.html
 
 
+==== Übung docker-compose
+
+* erstellen Sie ein File `docker-compose.yaml` welches folgende Dienste beinhaltet
+** Service backend
+*** beinhalted eine nodejs-express-Anwendung
+*** greift auf eine mariadb zu
+** Service db
+*** wird vom Service backend benutzt
+** Service phpmyadmin
+** Netzwerk my-network mit ip 10.0.2.0/24
+
+* erstellen Sie ein asciidoc-File, dass direkt die source-Files (docker-compose.yaml) in das sciidoc-File included.
+** Es darf nicht das gesamte File auf einmal inkludiert werden, sondern nur die einzelnen Teile hintereinander
+** verwenden Sie https://docs.asciidoctor.org/asciidoc/latest/macros/keyboard-macro/[keyb-Macros^]
+** Achten Sie auf eine saubere Präambel und allgemein ein sauberes Asciidoc-File
+
+* Abgabe: siehe https://edufs.edu.htl-leonding.ac.at/moodle/mod/url/view.php?id=162255[moodle^]
 
